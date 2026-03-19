@@ -1,13 +1,43 @@
-# Virtual environments
+# --- Backups & System Trash ---
+# Blocks manual backups and system-generated noise (e.g. .DS_Store)
+*.bak
+*.bak.*
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Python ---
+# Ignores compiled bytecode, test caches, and distribution folders
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Virtual Environments ---
+# Keeps local dependencies isolated
 .venv/
 venv/
+env/
+ENV/
 
-# Environment variables and credentials
+# --- Config & Security ---
+# CRITICAL: Prevents leaking API keys. Allows .env.example as a template.
 .env
+.env.*
+!.env.example
 
-# Python cache and bytecode
-__pycache__/
-*.pyc
-
-# System files
-.DS_Store
+# --- IDEs & Editors ---
+# Prevents editor-specific settings from causing conflicts
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
