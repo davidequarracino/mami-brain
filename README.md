@@ -1,9 +1,9 @@
 # mami-brain 🤖🍼
 
-"mami" is an LLM full-stack agent AI. 
-Simulating in a robot a meridional italian "mamma" type, 
-with strange things, ecces, too.
+"mami" is a high-performance LLM agent designed to simulate the logic, care, and "unfiltered" authority of a traditional mom.
+
+Expect a unique blend of proactive domestic management, overwhelming care, and a zero-nonsense attitude toward household safety and order.
 
 ## Structure
-- `api/`: Logic schemas and Pydantic models.
-- `core/`: Reasoning engine and planner.
+- `api/`: Brain architecture (Pydantic schemas).
+- `core/`: Reasoning engine & strategic planner.
